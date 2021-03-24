@@ -1,0 +1,46 @@
+{
+  "name": "uppy-plugin-lexmark",
+  "version": "0.0.1",
+  "description": "Plugin to handle scans from a Lexmark MFP",
+  "repository": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib --minified",
+    "merge": "rollup -c",
+    "build-module": "npm run build && npm run merge",
+    "test": "jest",
+    "test:serve": "node test/server.js",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "uppy",
+    "uppy-plugin",
+    "file uploader"
+  ],
+  "author": "Mario-Luca Hoffmann (Wegener IT GmbH & Co. KG)",
+  "license": "",
+  "dependencies": {
+    "@uppy/utils": "^2.4.4",
+    "preact": "8.2.9",
+    "@uppy/core": "^1.16.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/plugin-transform-flow-strip-types": "^7.13.0",
+    "@babel/plugin-transform-object-assign": "^7.12.13",
+    "@babel/plugin-transform-typescript": "^7.13.0",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-flow": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/runtime-corejs3": "^7.13.7",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@uppy/dashboard": "1.14.0",
+    "@uppy/locales": "1.17.0",
+    "@uppy/tus": "1.8.2",
+    "babel-preset-preact": "^2.0.0",
+    "rollup": "^2.42.4"
+  }
+}
