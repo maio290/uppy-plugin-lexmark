@@ -1,5 +1,5 @@
 {
-  "name": "uppy-plugin-lexmark",
+  "name": "@wegener-it/uppy-plugin-lexmark",
   "version": "0.0.1",
   "description": "Plugin to handle scans from a Lexmark MFP",
   "repository": "",
@@ -10,7 +10,7 @@
     "build-module": "npm run build && npm run merge",
     "test": "jest",
     "test:serve": "node test/server.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build-module"
   },
   "keywords": [
     "uppy",
