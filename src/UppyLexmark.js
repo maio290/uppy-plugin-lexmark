@@ -4,12 +4,13 @@ const { h } = require('preact')
 const Lexmark = require('./Lexmark')
 
 module.exports = class UppyLexmark extends Plugin {
-  static VERSION = "0.0.1"
+  static VERSION = "0.1.2"
 
-  lexmark = new Lexmark();
-
+  
   constructor (uppy, opts) {
     super(uppy, opts)
+    this.lexmark = new Lexmark();
+    window._mfpUppy = uppy;
     this.id = this.opts.id || 'UppyLexmark'
     this.title = 'Lexmark'
     this.type = 'acquirer'
@@ -22,7 +23,6 @@ module.exports = class UppyLexmark extends Plugin {
 
     // Default options
     const defaultOptions = {
-      target: null,
       pretty: true,
       inputName: 'files[]'
     }
@@ -63,7 +63,6 @@ module.exports = class UppyLexmark extends Plugin {
 
   handleClick (ev) {
     this.lexmark.sendMessageToESF("doScan");
-    this.input.click()
   }
 
   render (state) {

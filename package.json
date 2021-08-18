@@ -1,8 +1,11 @@
 {
   "name": "@wegener-it/uppy-plugin-lexmark",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "Plugin to handle scans from a Lexmark MFP",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maio290/uppy-plugin-lexmark.git"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir lib --minified",
@@ -18,29 +21,28 @@
     "file uploader"
   ],
   "author": "Mario-Luca Hoffmann (Wegener IT GmbH & Co. KG)",
-  "license": "",
+  "license": "MIT",
   "dependencies": {
-    "@uppy/utils": "^2.4.4",
-    "preact": "8.2.9",
-    "@uppy/core": "^1.16.1"
+    "@uppy/utils": "^3.4.2",
+    "preact": "8.2.9"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.0",
-    "@babel/core": "^7.13.1",
-    "@babel/plugin-syntax-jsx": "^7.12.13",
-    "@babel/plugin-transform-flow-strip-types": "^7.13.0",
-    "@babel/plugin-transform-object-assign": "^7.12.13",
-    "@babel/plugin-transform-typescript": "^7.13.0",
-    "@babel/preset-env": "^7.13.5",
-    "@babel/preset-flow": "^7.12.13",
-    "@babel/preset-react": "^7.12.13",
-    "@babel/runtime-corejs3": "^7.13.7",
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-syntax-jsx": "^7.14.5",
+    "@babel/plugin-transform-flow-strip-types": "^7.14.5",
+    "@babel/plugin-transform-object-assign": "^7.14.5",
+    "@babel/plugin-transform-typescript": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-flow": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/runtime-corejs3": "^7.15.3",
     "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
     "@uppy/dashboard": "1.14.0",
     "@uppy/locales": "1.17.0",
     "@uppy/tus": "1.8.2",
     "babel-preset-preact": "^2.0.0",
-    "rollup": "^2.42.4"
+    "rollup": "^2.56.2"
   }
 }
